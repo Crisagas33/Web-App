@@ -11,8 +11,8 @@ export const useAuth = () => {
 }
 
 export function AuthProvider({ children }) {
-  const singup = (email, password) => {
-    createUserWithEmailAndPassword(auth, email, password)
+  const singup = async(email, password) => {
+    await createUserWithEmailAndPassword(auth, email, password)
   }
 
   return (

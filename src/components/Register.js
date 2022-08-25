@@ -18,6 +18,7 @@ export function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    setError('')
     try {
       await singup(user.email, user.password)
       navigate("/")
