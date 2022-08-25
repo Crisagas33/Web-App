@@ -33,7 +33,7 @@ export function Register() {
      <form onSubmit={handleSubmit}>
       <label htmlFor="email">Email</label>
       <input
-        type="text"
+        type="email"
         name="email"
         placeholder="ejemplo@company.xd"
         onChange={handleChange}
